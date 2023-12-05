@@ -32,3 +32,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+allprojects {
+	tasks.withType(JavaCompile) {
+		options.deprecation = true
+	}
+}
